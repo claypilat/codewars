@@ -18,4 +18,19 @@ function divisors(integer) {
 
 divisors(10)
 
+//Square every digit of a number. Must input as int and return as int
 
+function squareDigits(num) {
+    var digits = ("" + num).split("");
+    var numList = ""
+
+    for (let i = 0; i < digits.length; i++) {
+        numList += (Math.pow(digits[i], 2)); 
+    } return Number(numList)
+      
+
+
+  
+};
+
+squareDigits(9119)
