@@ -34,3 +34,12 @@ function squareDigits(num) {
 };
 
 squareDigits(9119)
+
+
+function repeatStr (n, s) {
+    stringI = n * s
+    
+    console.log '';
+  }
+
+  repeatStr(3, "*")
