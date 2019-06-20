@@ -36,10 +36,24 @@ function squareDigits(num) {
 squareDigits(9119)
 
 
-function repeatStr (n, s) {
-    stringI = n * s
-    
-    console.log '';
+//add two numbers and convert to Binary 
+
+function addBinary(a,b) {
+    result = a + b
+    return (result >>> 0 ).toString(2);
+
+}
+
+// Your task is to make a function that can take any non-negative integer
+// as a argument and return it with its digits in descending order. 
+// Essentially, rearrange the digits to create the highest possible number.
+
+function descendingOrder(n){
+    var digits = (""+ n).split("");
+    digits.sort(function(a,b){return b-a});
+    var digits = digits.join("");
+    return Number(digits);
+
   }
 
-  repeatStr(3, "*")
+  descendingOrder(596578)
