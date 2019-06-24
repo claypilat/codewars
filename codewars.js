@@ -78,10 +78,7 @@ function descendingOrder(n){
 // but years divisible by 100 are not leap years
 // but years divisible by 400 are leap years
 
-  function isLeapYear(year) {
-    // TODO
-safasf 
+function isLeapYear(year) {
+  return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+}
 
-
-    
-  }
